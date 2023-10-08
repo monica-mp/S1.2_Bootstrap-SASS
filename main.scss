@@ -1,0 +1,96 @@
+$primary: #5265e1;
+$secondary: #fa5959;
+$custom-color-2: #4d4d4d;
+$custom-color-3: rgb(136, 136, 136);
+$custom-color-4: rgb(40, 30, 107);
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+);
+
+$custom-colors: (
+  "custom-color": rgb(238, 238, 238),
+  "custom-color-2": $custom-color-2,
+  "custom-color-3": $custom-color-3,
+  "custom-color-4": $custom-color-4,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+/*-----------------------------*/
+body {
+  overflow-x: hidden;
+}
+#login-btn {
+  color: rgb(255, 255, 255);
+}
+
+
+#paragraph {
+  color: $custom-color-3;
+}
+#paragraph-2 {
+  color: $custom-color-3;
+  
+}
+
+.div-bg {
+  background-color: $primary;
+  height: 40%;
+  width: 100%;
+  position: absolute;
+  right: -60%;
+  bottom: 30%;
+  z-index: -1;
+  border-radius: 20rem 0 0 20rem;
+}
+
+
+.img-1 {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.nav-link.custom-color {
+  color: $custom-color-2;
+}
+
+.card {
+  width: 18rem;
+}
+
+
+.card > img {  
+  height: auto;
+  align-self: center;
+  padding: 3rem 0 2rem 0;
+  margin: 0;
+}
+
+.accordion-button::after {
+    display: none;
+}
+
+
+
+@media (max-width: 576px) {
+  .div-bg {   
+    height: 30%;
+    width: 100%;    
+    right: -60%;
+    bottom: 50%;    
+  }
+}
+
+
+
+/*-----------------------------*/
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+:root {
+  --bs-body-font-family: "Rubik", sans-serif;
+}
