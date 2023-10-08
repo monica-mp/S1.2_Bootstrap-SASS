@@ -197,6 +197,80 @@
     </div>    
   </section>
 
+  <div class="container-fluid text-center bg-primary py-5 text-white">
+    <div class="row">
+      <div class="col-12 col-lg-4 px-5 px-lg-0 mx-lg-auto">
+        <h6 class="mb-3 mb-lg-4">35.000 + ALREADY JOINED</h6>
+        <h2 class="mb-4">Stay up-to-date with what we're doing</h2>        
+         <form class="row needs-validation" novalidate >
+            <div class="col-lg-8 mb-3 position-relative">
+              <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address" required>
+              <div class="invalid-tooltip" id="invalid-tooltip">
+                Invalid email
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <button type="submit" class="btn btn-secondary btn-lg w-100 text-white">Contact Us</button>
+            </div>
+        </form>        
+      </div>
+    </div>        
+  </div>
+  
+  <footer class="container-fluid bg-custom-color-4 text-center pt-4 justify-content-center">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <nav class="navbar  navbar-expand-lg ">                         
+          <ul class="navbar-nav mx-auto">
+            <a class="navbar-brand pb-3" href="#"><img src="./recursos/Imagenes/logo-bookmark.svg" alt="bookmark logo"></a>
+            <li class="nav-item  pb-3">
+              <a class="nav-link text-white" href="#">FEATURES</a>
+            </li>
+            <li class="nav-item  pb-3">
+              <a class="nav-link text-white" href="#">PRICING</a>
+            </li>
+            <li class="nav-item  pb-3">
+              <a class="nav-link text-white" href="#">CONTACT</a>
+            </li>            
+          </ul>
+        </nav>
+      </div>
+      <div class="col-12 col-lg-6">
+        <nav class="navbar">                         
+          <ul class="navbar-nav mx-auto d-flex flex-row">            
+            <li class="nav-item pb-3 px-3">
+              <a class="nav-link" href="#"><img src="./recursos/Imagenes/icon-facebook.svg" alt="facebook logo"></a>
+            </li>
+            <li class="nav-item pb-3">
+              <a class="nav-link" href="#"><img src="./recursos/Imagenes/icon-twitter.svg" alt="twitter logo"></a>
+            </li>                  
+          </ul>
+        </nav>
+      </div>          
+  </footer>
+
+
+  <script>
+  (() => {
+  'use strict'
+
+  const forms = document.querySelectorAll('.needs-validation')
+
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+      // Borrar la información del campo de texto
+      const inputText = form.querySelector('input[type="email"]')
+      inputText.value = ''
+    }, false)
+  })
+})()
+  </script>
   
 
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

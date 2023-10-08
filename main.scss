@@ -76,7 +76,6 @@ body {
 }
 
 
-
 @media (max-width: 576px) {
   .div-bg {   
     height: 30%;
@@ -84,6 +83,10 @@ body {
     right: -60%;
     bottom: 50%;    
   }
+}
+
+#invalid-tooltip{
+  background-color: $secondary;
 }
 
 
