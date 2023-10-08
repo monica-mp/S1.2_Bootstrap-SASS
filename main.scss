@@ -90,6 +90,38 @@ body {
 }
 
 
+/*----------------Active States----------------*/
+.navbar-nav .nav-item .nav-link:hover {
+  color: $secondary;
+}
+
+#login-btn:hover {
+  background-color: white;
+  border: .2rem solid $secondary;
+  color: $secondary;
+}
+
+#chrome-btn:hover {
+  background-color: white;
+  border: .2rem solid $primary;
+  color: $primary;
+  font-weight: 500;
+}
+
+#firefox-btn:hover {
+  background-color: white;
+  border: .2rem solid $custom-color-2;
+  color: $custom-color-2;
+}
+
+.navbar-nav .nav-item #tab-options:hover {
+  color: $secondary;
+}
+
+.accordion-button:hover{
+  color: $secondary;
+}
+
 
 /*-----------------------------*/
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
